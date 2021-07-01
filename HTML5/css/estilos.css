@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'poppins'; /*nombre*/
+    src: url(fonts/Poppins/Poppins-Regular.ttf); /*origen*/
+}
+
+body {
+   /* max-width: 1024px; */
+   font-family: 'poppins'
+}
+
+header {
+    background: blue;
+    text-align: center;
+    color: aliceblue;
+}
+
+header h1 {
+    font-family: 'Yellowtail', cursive;
+}
+
+header nav ul li {
+    width: 150px;
+    background: orange;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+/* header img {
+    border: 5px solid green;
+} */
+
+#seccion1 {
+    background: paleturquoise;
+}
+
+.secc1art {
+    width: 49%;
+    font-size: 20px;
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid black;
+}
+
+#seccion2 {
+    color: red;
+}
+
+footer {
+    background: blueviolet;
+    color: aliceblue;
+}
