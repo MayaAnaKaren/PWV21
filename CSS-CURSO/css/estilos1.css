@@ -1,0 +1,39 @@
+/*Selectores básicos: id, clase, etiqueta, universal y atributos */
+
+/*** SELECTOR DE ATRIBUTOS ***/
+
+/*Selecionar los elementos que tienen ese atributo*/
+[href] {
+    color: green;
+}
+
+/*Selecionar los elementos que tienen ese atributo y ese valor*/
+[href="#"] {
+    color: red;
+}
+
+/*Selecionar los elementos que tienen ese atributo y ese valor al menos una vez*/
+[class~="verde"]{
+    color: green;
+}
+
+/*Selecionar los elementos que tienen ese atributo y empicen por ese valor
+seguido de un guión o tengan exactamente el valor*/
+[class|="verde"]{
+    color: orange;
+}
+
+/*Selecionar los elementos que tienen ese atributo y empiecen con ese valor*/
+[class^="rojo"] {
+    color:purple;
+}
+
+/*Selecionar los elementos que tienen ese atributo y terminan con ese valor*/
+[class$="rojo"] {
+    color: red;
+}
+
+/*Selecionar los elementos que tienen ese atributo y contienen ese valor*/
+[class*="rojo"] {
+    color: blue;
+}
