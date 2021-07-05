@@ -1,0 +1,46 @@
+/*
+ Especificidad
+
+ Etiquetas -> 001
+ Clases y pseudoclases -> 010
+ Id -> 100
+
+ Estilos en línea -> 1000
+
+ !important - GANA A TODOS- MALA PRACTICA
+*/
+
+
+#parrafo{
+    color: green;
+}
+
+.parrafo {
+    color: purple !important;
+}
+
+p {
+    color: red;
+}
+
+.parrafo {
+    color: teal;
+}
+
+a {
+    color: inherit; 
+}
+
+p {
+    color: green;
+}
+
+p {
+    color: blue !important;
+}
+
+.dos {
+ color: red;
+}
+
+

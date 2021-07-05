@@ -1,0 +1,47 @@
+/*
+    ELEMENTOS EN LINEA:
+        -Solo ocupan el tamaño de su contenido.
+        -No se puede modificar ancho ni alto.
+        -Margin y padding solo se aplica en elemento horizontal.
+    
+    ELEMENTO EN BLOQUE:
+        -Ocupan todo el ancho disponible (Navegador(body) o contenedor padre)
+        -Se les puede asignar ancho y alto.
+
+    VALOR INLINE-BLOCK: 
+        -Se comporta como un elemento en línea.
+        -Se puede modificar width y height.
+
+    MODELO DE CAJA- propiedades:
+        -width 
+        -height 
+        -margin: Separación entre una caja y cajas adyacentes.
+        -padding: Separación entre el contenido y sus bordes.
+        -border
+
+    PROPIEDAD DE DISPLAY: Permite como definir el comportamiento de una caja
+    con respecto a las cajas adyacentes.
+*/
+h1 {
+    width: 300px;
+    color: red;
+    font-size: 2em;
+    /* margin: 100px 20px 200px 50px; top right bottom left*/
+    /* margin: 50px 100px 80px; top right/left bottom*/
+    /* margin: 100px 50px; top/bottom right/left */
+    margin: 30px; /*Todos los lados*/
+    /* padding: 30px; */
+    /* border: 20px solid red; */
+}
+
+a {
+    margin: 20px; /*Margin y padding solo se aplica en eje horizontal*/
+}
+
+span {
+    width: 200px;
+    height: 400px;
+    background: lightcoral;
+    display: inline-block;
+    margin: 50px 0;
+}

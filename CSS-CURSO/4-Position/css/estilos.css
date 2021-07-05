@@ -1,0 +1,8 @@
+.caja-1{
+    width: 150px;
+    height: 150px;
+    background: lightcoral;
+    position: relative;
+    top: 10px;
+    left: 50px;
+}
