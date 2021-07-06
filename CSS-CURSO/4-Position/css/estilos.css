@@ -1,8 +1,87 @@
-.caja-1{
-    width: 150px;
-    height: 150px;
-    background: lightcoral;
-    position: relative;
-    top: 10px;
-    left: 50px;
+/*
+POSITION
+
+Flujo HTML: Es el orden en el que aparecen los elementos en el documento.
+
+Espacio: Es el espacio que ocupa un elemento en el documento, lo reserva 
+el navegador.
+
+*/
+
+.caja {
+    width: 40px;
+    height: 40px;
 }
+
+.contenedor{
+    border: 3px solid black;
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+
+.caja-1{
+    background: lightcoral; 
+    position: absolute;
+    bottom: 0;
+    right: 0; 
+}
+
+.caja-2 {
+    background: lightgreen;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.caja-3 {
+    background: lightpink;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.caja-4 {
+    background: lightsalmon;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+}
+
+.caja-5 {
+    background: lightseagreen;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto; /*Calcula que la distancia de los lados sea la misma*/
+}
+
+/*PARA FIXED*/
+
+body {
+    margin: 0 auto;
+    /* padding-top: 40px; */
+}
+
+.menu {
+    background: orange;
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    /* position: fixed;
+    width: 100%;
+    top: 0; */
+    position: sticky;
+    top: 20px;
+}
+
+.carrusel {
+    background: lightseagreen;
+    height: 200px;
+    text-align: center;
+}
+
+

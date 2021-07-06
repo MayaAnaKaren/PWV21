@@ -1,0 +1,180 @@
+/*
+PSEUDOELEMENTOS
+
+Se utilizan para dar estilos a partes especificas de un elemento.
+
+Básicos:
+    - ::first-letter - Elementos en bloque
+    - ::first-line - Elementos en bloque
+    - ::selection
+    - ::before
+    - ::after
+*/
+
+.titulo::first-letter {
+    color: red;
+    font-size: 60px;
+}
+
+.texto::first-line {
+    color: blue;
+}
+
+.texto::selection {
+    background: black;
+    color: white;
+}
+
+.dinero::before {
+    content: '$';
+}
+
+.dinero::after {
+    content: '.00';
+}
+
+.ejemplo::before, .ejemplo::after {
+  content: '';
+  display: block;
+  background: black;
+  width: 10px;
+  height: 10px;
+}
+
+/*
+PSEUDOCLASES
+
+Reaccionan en tiempo real detectando la interacción del usuario con 
+algunos elementos. (ELEMENTO DE ESCUCHA)
+
+Dinamicas:
+    - :link (links) - link no visitados 
+    - :visited  (links) - link visitado
+    - :active (links) - Al momento de dar clic
+    - :hover - Al poner el mouse sobre un elemento
+    - :focus
+*/
+
+a:link {
+    color: green;
+}
+
+a:visited {
+    color: red;
+}
+
+a:active {
+   transform: scale(.9);
+}
+
+.boton {
+    background: blueviolet;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 60px;
+    text-align: center;
+    padding: 5px;
+    display: inline-block;
+}
+
+.boton:hover {
+    background: brown;
+}
+
+/* input:focus {
+    background: yellow;
+} */
+
+
+/*
+   PSEUDOCLASES DE ESTADO  
+    - enabled
+    - disabled
+    - checked
+    - valid
+    - invalid
+    -required
+    -out-of-range
+    -in-range
+*/
+
+.label, .input {
+    display: block;
+}
+
+.input:enabled{
+    background: white;
+}
+
+.input:disabled {
+    background: yellow;
+    border: none;
+}
+
+.input:checked + label{
+    color: tomato;
+    font-size: 28px;
+}
+
+.input:required {
+    background: red;
+    border: 3px solid green;
+}
+
+.input:out-of-range {
+    background: red;
+}
+
+.input:in-range {
+    background: green;
+}
+
+/*
+    Estructurales
+
+    :root - Como aplicar a HTML - declarar variables.
+    :empty - Se aplica a elementos.
+
+    CHILD
+         :first-child - Selecciona el primer hijo, independiente de su etiqueta
+         :last-child -  Selecciona el ultimo hijo, independiente de su etiqueta
+
+         :nth-child() - Selecciona al hijo n
+         :nth-last-child() - Selecciona al hijo pero comenzando a contar desde el ultimo
+         :only-child - Hijo unico
+            -valores:
+                Enteros: 1, 2, 3 ..... n
+                odd - impares
+                even - pares
+                ecuaciones - (1n, 3n, 4n+1, n+1)
+                n es un multiplicador, comienza desde 0 hasta el total de elementos.
+
+
+        TYPE
+            :first-of-type
+            :last-of-type
+            :nth-of-type()
+            :nth-of-last-type()
+
+        :not
+*/
+
+.parrafo:nth-of-type(3) {
+    background-color: aqua;
+}
+
+.parrafo:not(p){
+    background: blueviolet;
+}
+
+
+
+
+
+
+
+
+
+
+
