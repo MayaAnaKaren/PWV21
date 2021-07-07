@@ -1,0 +1,76 @@
+:root {
+    --azul: #daf2fa;
+    --magenta: #98386b; 
+    --naranja: #fea400;
+    --magentaosc: #945476;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 1024px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px; /*1em*/
+}
+
+header {
+    background: var(--azul);
+    position: relative;
+    margin-bottom: 20px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    background: var(--magenta);
+    align-items: center;
+    border-radius: 5px;
+    padding: 0 15px 0 35px;
+    margin: 0 auto;
+}
+
+header nav ul {
+    /* margin: 0;  */
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 35px;
+    color: white;
+    font-weight: bold;
+}
+
+#logo {
+    position: absolute;
+    left: 120px;
+    top: 15px;
+}
+
+#principal {
+    width: 96%;
+    border: 5px solid silver;
+}
+
+.boton-buscar {
+    height: 30px;
+    border: none;
+    background: var(--naranja);
+    color: white;
+    border-radius: 5px;
+}
+
+.buscador {
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.secc1 {
+    text-align: center;
+}
+
+.secc2 {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+}
