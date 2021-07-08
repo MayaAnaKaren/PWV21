@@ -1,0 +1,51 @@
+:root {
+    --lilafuerte: #764095;
+    --lila: #865dc1;
+    --lilabajito: #b79ddd;
+    --azul: #86a0e1;
+    --babyazul: #add8e6;
+    --cafe: #e9d6b3;
+    --grisblanco: #fafafa;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 1024px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*
+    DEGRADADOS
+    Es la transición entre un color y otro.
+    Tipos: lineales y radiales.
+
+    2 colores: 0% 100%
+    3 colores: 0% 50% 100%
+
+    Es un valor de la propiedad background-image
+        linear-gradient([direction], color1, color 2)
+
+        radial-gradient( circle o ellipse [shape], color1, color2)
+*/
+
+header nav {
+    padding: 15px 15px 10px;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 35px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.barra {
+    background-image: linear-gradient(var(--lila) 5%, var(--lilabajito) 15%, var(--lila) 60%);
+    border-radius: 5px;
+}
