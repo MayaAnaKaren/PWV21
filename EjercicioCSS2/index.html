@@ -10,12 +10,16 @@
   </head>
   <body>
     <header>
-      <img src="img/logo.png" alt="logo" />
-      <h1>MI PÁGINA EN HTML5</h1>
-      <div>
-        <img src="img/red1.png" alt="Facebook" />
-        <img src="img/red2.png" alt="Instagram" />
-        <img src="img/red3.png" alt="Twitter" />
+      <div class="header-contenido">
+        <div>
+          <img src="img/logo.png" alt="logo" />
+          <h1>MI PÁGINA EN HTML5</h1>
+        </div>
+        <div class="header-redes">
+          <img src="img/red1.png" alt="Facebook" />
+          <img src="img/red2.png" alt="Instagram" />
+          <img src="img/red3.png" alt="Twitter" />
+        </div>
       </div>
       <nav class="barra">
         <ul>
@@ -30,14 +34,14 @@
     </header>
     <main>
       <section>
-        <article>
+        <article class="art1">
           <img src="img/slider.jpg" alt="posts" />
         </article>
-        <article>
+        <article class="art2">
           <h2>Titulo del Post</h2>
-          <img src="img/img-post.png" alt="imagen del post" />
-          <div>
-              <div>
+          <img src="img/img-post.png" alt="imagen del post" id="img-post" />
+          <div class="text-post">
+              <div class="autor-post">
                   Por <span>Admin</span>
                   El <span>30/05/2012.</span>
                   En <span>Pruebas</span>
@@ -52,8 +56,8 @@
     </main>
     <aside>
         <div class="publicidad">
-            <div class="barra">Publicidad</div>
-            <div>
+            <div class="barra barra-aside">Publicidad</div>
+            <div class="publicidad-img">
                 <img src="img/anuncio.png" alt="Publicidad">
                 <img src="img/anuncio.png" alt="Publicidad">
                 <img src="img/anuncio.png" alt="Publicidad">
@@ -61,14 +65,14 @@
             </div>
         </div>
         <div class="buscador">
-            <div class="barra">Buscador</div>
+            <div class="barra barra-aside">Buscador</div>
             <form action#">
                 <input type="search" placeholder="Search...">
                 <input type="submit" value="Ir">
             </form>
         </div>
         <div class="categorias">
-            <div class="barra">Caregorías</div>
+            <div class="barra barra-aside">Caregorías</div>
             <ul>
                 <li>Caregoría 1</li>
                 <li>Caregoría 2</li>

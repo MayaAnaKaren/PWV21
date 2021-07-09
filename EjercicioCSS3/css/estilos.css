@@ -1,0 +1,13 @@
+:root {
+    --pink: #e92164;
+    --blue: #2ed9ed;
+    --green: #088429;
+    --dark-blue: #1d4fa8;
+    --yellow: #e3cb39;
+}
+
+body {
+    max-width: 1024px;
+    margin: 0 auto;
+    font-size: 16px;
+}

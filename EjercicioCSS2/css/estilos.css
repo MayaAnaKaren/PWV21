@@ -1,7 +1,7 @@
 :root {
     --lilafuerte: #764095;
     --lila: #865dc1;
-    --lilabajito: #b79ddd;
+    --lilabajito: #bca6dd;
     --azul: #86a0e1;
     --babyazul: #add8e6;
     --cafe: #e9d6b3;
@@ -29,8 +29,36 @@ body {
         radial-gradient( circle o ellipse [shape], color1, color2)
 */
 
+/*
+    h-offset: Desplazamiento horizontal de la sombra
+    v-offset: Desplazamiento vertical de la sombra
+    blur: (opcional) Cantidad de desenfoque de la sombra
+    color: (opcional) Es el color de la forma, se pone por
+            default el color del texto.
+
+    spread: (opcional) Extensión de la sombra
+    inset|outset:(opcional) Determina si la sombra se añade
+                por fuera o dentro de la caja.
+
+    Sombras múltiples: Se añaden separadas por comas.
+        Las que se añaden primero se ponen encima de las demás.
+
+    TEXT-SHADOW
+
+        text-shadow: h-offset v-offset blur color;
+
+    BOX-SHADOW
+
+        box-shadow: h-offset v-offset blur spread color inset|outset;
+*/
+
+header {
+    margin-bottom: 25px;
+}
+
 header nav {
     padding: 15px 15px 10px;
+    width: 97%;
 }
 
 header nav ul {
@@ -45,7 +73,170 @@ header nav ul li {
     font-weight: bold;
 }
 
+h1 {
+    color: #FFFFFF;
+    /* text-shadow: 0 0 2px var(--lilafuerte), 0 0 2px var(--lilafuerte); */
+    -webkit-text-stroke: 1px var(--lilafuerte);
+    margin-top: 0;
+    font-size: 26px;
+}
+
+main, aside {
+    display: inline-block;
+}
+
+main {
+    width: 55%;
+    padding: 0 10px 0 30px;
+}
+
+main .art1  {
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+main .art1 img {
+    width: 92%;
+}
+
+main .art2 {
+    border-top: 1px solid silver;
+    border-bottom: 1px solid silver;
+    padding: 25px 0;
+}
+
+main .art2 h2{
+    color: var(--babyazul);
+    font-size: 26px;
+    margin: 0 0 15px;
+}
+
+main .art2 p{
+    font-size: 14px;
+}
+
+main .art2 button {
+    background: var(--cafe);
+    color: #FFFFFF;
+    border-radius: 7px;
+    padding: 7px;
+    border: none;
+    font-style: italic;
+    font-weight: bold;
+}
+
+aside {
+    width: 38%;
+    vertical-align: top;
+}
+
 .barra {
-    background-image: linear-gradient(var(--lila) 5%, var(--lilabajito) 15%, var(--lila) 60%);
+    background-image: linear-gradient(var(--lila) 5%, var(--lilabajito) 19%, var(--lila) 55%);
     border-radius: 5px;
+}
+
+.barra-aside {
+    padding: 9px 0;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-align: center;
+}
+
+.header-contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 15px 20px;
+}
+
+.header-redes {
+    margin: 20px 0 0;
+}
+
+.header-redes img {
+    margin-left: 8px;
+}
+
+.publicidad-img {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.publicidad-img img {
+    width: 41%;
+    border: 2px solid silver;
+}
+
+.publicidad, .buscador, .categorias {
+    border: 1px solid silver;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.publicidad {
+    margin-top: 15px;
+}
+
+.buscador {
+    text-align: center;
+}
+
+.buscador form {
+    /* width: 200px; */
+    margin: 15px;
+    border: 1px solid silver;
+    padding: 10px 10px 5px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.buscador input[type="search"]{ 
+    border-radius: 5px;
+    border: 1px solid silver;
+}
+
+.buscador input[type="submit"]{
+    height: 22px;
+    border-radius: 50%;
+    background: var(--azul);
+    color: #FFFFFF;
+    border: 1px solid silver;
+}
+
+#img-post {
+    width: 28%;
+    border: 3px solid silver;
+    vertical-align: top;
+}
+
+.categorias ul {
+    margin-right: 30px;
+}
+
+.categorias ul li  {
+    color: var(--babyazul);
+    border-bottom: 1px dotted black;
+    padding: 5px 0 8px;
+    font-size: 14px;
+}
+
+.text-post {
+    width: 62%;
+    display: inline-block;
+    margin: 0 5px 0;
+}
+
+.autor-post {
+    background: var(--grisblanco);
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: 12px;
+    /* border-right: 2px solid silver;
+    border-bottom: 2px solid silver; */
+    box-shadow: 2px 2px 1px 0 silver;
+}
+
+.autor-post span {
+    color: rgb(142, 140, 140);
+    font-style: italic;
 }
