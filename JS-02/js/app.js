@@ -160,4 +160,4 @@ console.log(inv);
 /********** OPERADOR DE PROPAGACIÓN ************/
 
 let arrNum = [1, 2, 3, 4];
-console.log(...arrNum);
+console.log(...arrNum)
